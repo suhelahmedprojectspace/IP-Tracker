@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+  <title>IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="main">
+    <h1>IP Address Tracker</h1>
+    <div class="main_in">
+      <input type="text" placeholder="Enter your Id addresss" id="value">
+      <button id="main_btn"><img src="images/icon-arrow.svg" alt="know"></button>
+
+    </div>
+  </div>
+  <div class="result">
+    <div class="result_container">
+      <div class="rs">
+        <h3>IP ADDRESS</h3>
+        <strong id="ip"></strong>
+
+      </div>
+      <div style="border-left:1px solid rgba(0, 0, 0, 0.5);height:50px"></div>
+
+      <div class="rs">
+        <h3>Location</h3>
+        <strong id="location"></strong>
+
+      </div>
+      <div style="border-left:1px solid rgba(0, 0, 0, 0.5);height:50px"></div>
+      <div class="rs">
+        <h3>Timezone</h3>
+        <strong id="Timezone"></strong>
+      </div>
+      <div style="border-left:1px solid rgba(0, 0, 0, 0.5);height:50px"></div>
+      <div class="rs">
+        <h3>ISP</h3>
+        <strong id="Isp"></strong>
+      </div>
+
+    </div>
+  </div>
+  <div id="map"></div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
